@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "symbolic"
+    gem.name = "symbolic-math"
     gem.summary = %Q{Symbolic math expression in Ruby}
     gem.description = %Q{This is a proof-of-concept experiment inspired by Sage}
     gem.email = "jgoizueta@gmail.com"

@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/symbolic-math.rb",
+     "symbolic-math.gemspec",
      "test/helper.rb",
      "test/test_symbolic.rb"
   ]

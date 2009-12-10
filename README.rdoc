@@ -31,10 +31,10 @@ Functions can be defined with +fun+:
   
 == Similar project
   
-  http://github.com/brainopia/symbolic is a similar, more complete project. Because of this the gem released
-  by this project has been renamed to symbolic-math. Note that this project's pretensions are more limited than
-  brainopia's; I only intend to play with syntax to do symbolic Math in Ruby, not to implement any relevant
-  symbolic math functionality.
+http://github.com/brainopia/symbolic is a similar, more complete project. Because of this the gem released
+by this project has been renamed to symbolic-math. Note that this project's pretensions are more limited than
+brainopia's; I only intend to play with syntax to do symbolic Math in Ruby, not to implement any relevant
+symbolic math functionality.
 
 == Note on Patches/Pull Requests
 

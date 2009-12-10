@@ -1,9 +1,36 @@
 = symbolic
 
-Description goes here.
+This is a proof-of-concept experiment to handle symbolic expressions in Ruby, inspired by Sage.
+
+Symbolic expressions can be built with Ruby syntax in a +symbolic+ block, by declaring variables with +var+:
+
+  symbolic do
+    var :x
+    expr = 2+x                         # now expr contains a symbolic expression
+    puts expr                          # -> (2 + x)
+    puts eval(expr)                    # -> (2 + x)
+    self.x = 1.5
+    puts eval(expr)                    # -> 3.5
+    puts eval(expr/7)                  # -> 0.5
+    var :y
+    poly = 3*x**3 - x**2 - y*x + 7
+    puts eval(poly)                    # -> ((7.875 - (y * 1.5)) + 7)
+    puts eval(poly, :y=>5.0)           # -> 7.375
+  end
+
+Functions can be defined with +fun+:
+
+  symbolic do
+    fun(:sqr){|x| x*x}
+    var :x
+    expr = sqr(sin(x))
+    puts expr             # -> sqr(sin(x))
+    self.x = 1.5
+    puts eval(expr)       # -> 0.994996248300223
+  end
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

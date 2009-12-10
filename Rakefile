@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "symbolic"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Symbolic math expression in Ruby}
+    gem.description = %Q{This is a proof-of-concept experiment inspired by Sage}
     gem.email = "jgoizueta@gmail.com"
     gem.homepage = "http://github.com/jgoizueta/symbolic"
     gem.authors = ["Javier Goizueta"]
